@@ -371,14 +371,38 @@ namespace GoogleARCore.Examples.HelloAR
             rotateslider.SetActive(false);
             move = false;
         }
+
+        public Slider sl2;
+        public void Scale2(Slider sl2)
+        {
+            float val2 = sl2.value + 3;
+            Vector3 sc2 = new Vector3(val2, SelectedModel.transform.localScale.y, 0.1f);
+            // Debug.Log("scA" + sl2.value);
+            SelectedModel.transform.localScale = sc2;
+        }
+
         public void Scale(Slider sl)
         {
-            float val = sl.value+1;
-            Vector3 sc = new Vector3(val,val,val);
-            Debug.Log("scA" + sl.value);
-            SelectedModel.transform.localScale = sc;
-            // Debug.Log("MODEL" + ModelCount);
+            if (SelectedModel.tag == "wall")
+            {
+                sl2.gameObject.SetActive(true);
 
+                float val = sl.value + 2;
+                Vector3 sc = new Vector3(val, val,0.1f);
+                Debug.Log("scA" + sl.value);
+                SelectedModel.transform.localScale = sc;
+                // Debug.Log("MODEL" + ModelCount);
+            }
+            else
+            {
+                sl2.gameObject.SetActive(false);
+
+                float val = sl.value + 1;
+                Vector3 sc = new Vector3(val, val, val);
+                Debug.Log("scA" + sl.value);
+                SelectedModel.transform.localScale = sc;
+                // Debug.Log("MODEL" + ModelCount);
+            }
         }
 
         public void Rotate(Slider sl)
