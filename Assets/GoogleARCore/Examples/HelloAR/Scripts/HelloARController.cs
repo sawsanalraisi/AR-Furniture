@@ -42,8 +42,8 @@ namespace GoogleARCore.Examples.HelloAR
         /// </summary>
         /// 
         public GameObject markerPoint; // The placement marker Object
-                        TrackableHit hit;
-
+        TrackableHit hit;
+        private Pose placementPose;
         ///To keep track of the last clicked object
         public static GameObject SelectedModel = null;
 
@@ -110,8 +110,6 @@ namespace GoogleARCore.Examples.HelloAR
                 if (m_AllPlanes[i].TrackingState == TrackingState.Tracking)
                 {
                     showSearchingUI = false;
-
-                    
                     break;
                 }
             }
@@ -139,8 +137,6 @@ namespace GoogleARCore.Examples.HelloAR
                 Ray raycast = Camera.main.ScreenPointToRay(touch.position);
                 if (Physics.Raycast(raycast, out hit2, Mathf.Infinity))
                 {
-
-
                     if (SelectedModel != null)
                     {
                         SelectedModel.transform.Find("highlighter").gameObject.SetActive(false);
@@ -178,8 +174,10 @@ namespace GoogleARCore.Examples.HelloAR
                             }
 
                             // Instantiate Andy model at the hit pose.
-                            var andyObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
+                            //var andyObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
+                            var andyObject = Instantiate(prefab, placementPose.position, Quaternion.identity);
 
+                            
                             // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
                             andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
 
@@ -243,6 +241,7 @@ namespace GoogleARCore.Examples.HelloAR
 
                 //change markerpoint position to the hit
                 markerPoint.transform.position = hit.Pose.position;
+                placementPose = hit.Pose;
 
             }
 
