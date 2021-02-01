@@ -58,3 +58,9 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.csproj
+*.csproj
+Assets/Art/Art.meta
+*.meta
+*.csproj
+Assembly-CSharp-Editor.csproj

@@ -67,7 +67,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// A model to place when a raycast from a user touch hits a plane.
         /// </summary>
         public GameObject AndyPlanePrefab;
-        public GameObject[] furniture; 
+        public GameObject[] furniture;
         /// <summary>
         /// A model to place when a raycast from a user touch hits a feature point.
         /// </summary>
@@ -129,7 +129,7 @@ namespace GoogleARCore.Examples.HelloAR
                 }
 
                 // Raycast against the location the player touched to search for planes.
-              //  TrackableHit hit;
+                //  TrackableHit hit;
                 TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                     TrackableHitFlags.FeaturePointWithSurfaceNormal;
 
@@ -177,7 +177,7 @@ namespace GoogleARCore.Examples.HelloAR
                             //var andyObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
                             var andyObject = Instantiate(prefab, placementPose.position, Quaternion.identity);
 
-                            
+
                             // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
                             andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
 
@@ -191,7 +191,7 @@ namespace GoogleARCore.Examples.HelloAR
                     }
                 }
             }
-             else
+            else
             {
                 msg = "in moving ";
                 Touch touch;
@@ -211,7 +211,7 @@ namespace GoogleARCore.Examples.HelloAR
                         {
                             SelectedModel.transform.position = hit.Pose.position;
                         }
-                        
+
                     }
                 }
             }
@@ -327,6 +327,11 @@ namespace GoogleARCore.Examples.HelloAR
             GUI.Label(new Rect(10, 20, 1000, 202), "touched" + touched);
         }
 
+        public void SelectFurniture(GameObject furnitureModel)
+        {
+            AndyPlanePrefab = furniture[0];
+        }
+
         public void enablewall()
         {
             AndyPlanePrefab = furniture[0];
@@ -337,8 +342,8 @@ namespace GoogleARCore.Examples.HelloAR
             AndyPlanePrefab = furniture[1];
             msg = "pressed chair";
         }
-  
-       
+
+        
 
         public void EnableEditing()
         {
@@ -362,7 +367,7 @@ namespace GoogleARCore.Examples.HelloAR
             rotateslider.SetActive(true);
             scalerslider.SetActive(false);
             move = false;
-           
+
         }
         public void EnableScaler()
         {
@@ -388,7 +393,7 @@ namespace GoogleARCore.Examples.HelloAR
                 sl2.gameObject.SetActive(true);
 
                 float val = sl.value + 2;
-                Vector3 sc = new Vector3(val, val,0.1f);
+                Vector3 sc = new Vector3(val, val, 0.1f);
                 Debug.Log("scA" + sl.value);
                 SelectedModel.transform.localScale = sc;
                 // Debug.Log("MODEL" + ModelCount);
@@ -407,7 +412,7 @@ namespace GoogleARCore.Examples.HelloAR
 
         public void Rotate(Slider sl)
         {
-            Vector3 sc = new Vector3(0, sl.value*360, 0);
+            Vector3 sc = new Vector3(0, sl.value * 360, 0);
             Debug.Log("scA" + sl.value);
             SelectedModel.transform.rotation = Quaternion.Euler(sc);
             Debug.Log("scale" + transform.localScale);
