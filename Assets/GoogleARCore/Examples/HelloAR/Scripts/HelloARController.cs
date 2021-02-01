@@ -67,7 +67,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// A model to place when a raycast from a user touch hits a plane.
         /// </summary>
         public GameObject AndyPlanePrefab;
-        public GameObject[] furniture; 
+        public GameObject[] furniture;
         /// <summary>
         /// A model to place when a raycast from a user touch hits a feature point.
         /// </summary>
@@ -129,7 +129,7 @@ namespace GoogleARCore.Examples.HelloAR
                 }
 
                 // Raycast against the location the player touched to search for planes.
-              //  TrackableHit hit;
+                //  TrackableHit hit;
                 TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                     TrackableHitFlags.FeaturePointWithSurfaceNormal;
 
@@ -177,7 +177,7 @@ namespace GoogleARCore.Examples.HelloAR
                             //var andyObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
                             var andyObject = Instantiate(prefab, placementPose.position, Quaternion.identity);
 
-                            
+
                             // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
                             andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
 
@@ -191,7 +191,7 @@ namespace GoogleARCore.Examples.HelloAR
                     }
                 }
             }
-             else
+            else
             {
                 msg = "in moving ";
                 Touch touch;
@@ -211,7 +211,7 @@ namespace GoogleARCore.Examples.HelloAR
                         {
                             SelectedModel.transform.position = hit.Pose.position;
                         }
-                        
+
                     }
                 }
             }
@@ -327,19 +327,197 @@ namespace GoogleARCore.Examples.HelloAR
             GUI.Label(new Rect(10, 20, 1000, 202), "touched" + touched);
         }
 
-        public void enablewall()
+
+        //  public void SelectFurniture()
+        //{
+        //  AndyPlanePrefab = furniture[ManagerScript.instance.IndexModel];
+        //}
+
+
+        // public void SelectFurniture(GameObject furnitureModel)
+        //{
+        //  AndyPlanePrefab = furniture[0];
+        //}
+
+        // public void enablewall()
+        //{
+        //AndyPlanePrefab = furniture[0];
+        // msg = "pressed desk";
+        // }
+
+
+
+        public void furniture0()
         {
-            AndyPlanePrefab = furniture[0];
-            msg = "pressed desk";
+        AndyPlanePrefab = furniture[0];
         }
-        public void enableTV()
+
+        public void furniture1()
         {
             AndyPlanePrefab = furniture[1];
-            msg = "pressed chair";
         }
-  
-       
 
+        public void furniture2()
+        {
+            AndyPlanePrefab = furniture[2];
+        }
+
+        public void furniture3()
+        {
+            AndyPlanePrefab = furniture[3];
+        }
+
+
+        public void furniture4()
+        {
+            AndyPlanePrefab = furniture[4];
+        }
+
+        public void furniture5()
+        {
+            AndyPlanePrefab = furniture[5];
+        }
+
+        public void furniture6()
+        {
+            AndyPlanePrefab = furniture[6];
+        }
+
+        public void furniture7()
+        {
+            AndyPlanePrefab = furniture[7];
+        }
+        public void furniture8()
+        {
+            AndyPlanePrefab = furniture[8];
+        }
+
+        public void furniture9()
+        {
+            AndyPlanePrefab = furniture[9];
+        }
+
+        public void furniture10()
+        {
+            AndyPlanePrefab = furniture[10];
+        }
+        public void furniture11()
+        {
+            AndyPlanePrefab = furniture[11];
+        }
+        public void furniture12()
+        {
+            AndyPlanePrefab = furniture[12];
+        }
+        public void furniture13()
+        {
+            AndyPlanePrefab = furniture[13];
+        }
+        public void furniture14()
+        {
+            AndyPlanePrefab = furniture[14];
+        }
+        public void furniture15()
+        {
+            AndyPlanePrefab = furniture[15];
+
+        }
+
+        public void furniture16()
+        {
+            AndyPlanePrefab = furniture[16];
+
+        }
+        public void furniture17()
+        {
+            AndyPlanePrefab = furniture[17];
+
+        }
+        public void furniture18()
+        {
+            AndyPlanePrefab = furniture[19];
+
+        }
+        public void furniture19()
+        {
+            AndyPlanePrefab = furniture[19];
+
+        }
+        public void furniture20()
+        {
+            AndyPlanePrefab = furniture[20];
+
+        }
+        public void furniture21()
+        {
+            AndyPlanePrefab = furniture[21];
+
+        }
+        public void furniture22()
+        {
+            AndyPlanePrefab = furniture[22];
+
+        }
+        public void furniture23()
+        {
+            AndyPlanePrefab = furniture[23];
+
+        }
+        public void furniture24()
+        {
+            AndyPlanePrefab = furniture[24];
+
+        }
+        public void furniture25()
+        {
+            AndyPlanePrefab = furniture[25];
+
+        }
+        public void furniture26()
+        {
+            AndyPlanePrefab = furniture[26];
+
+        }
+        public void furniture27()
+        {
+            AndyPlanePrefab = furniture[27];
+
+        }
+        public void furniture28()
+        {
+            AndyPlanePrefab = furniture[28];
+
+        }
+        public void furniture29()
+        {
+            AndyPlanePrefab = furniture[29];
+
+        }
+        public void furniture30()
+        {
+            AndyPlanePrefab = furniture[30];
+
+        }
+        public void furniture31()
+        {
+            AndyPlanePrefab = furniture[31];
+
+        }
+        public void furniture32()
+        {
+            AndyPlanePrefab = furniture[32];
+
+        }
+        public void furniture33()
+        {
+            AndyPlanePrefab = furniture[33];
+
+        }
+        public void furniture34()
+        {
+            AndyPlanePrefab = furniture[34];
+
+        }
         public void EnableEditing()
         {
             SelectPanel.SetActive(false);
@@ -362,7 +540,7 @@ namespace GoogleARCore.Examples.HelloAR
             rotateslider.SetActive(true);
             scalerslider.SetActive(false);
             move = false;
-           
+
         }
         public void EnableScaler()
         {
@@ -388,7 +566,7 @@ namespace GoogleARCore.Examples.HelloAR
                 sl2.gameObject.SetActive(true);
 
                 float val = sl.value + 2;
-                Vector3 sc = new Vector3(val, val,0.1f);
+                Vector3 sc = new Vector3(val, val, 0.1f);
                 Debug.Log("scA" + sl.value);
                 SelectedModel.transform.localScale = sc;
                 // Debug.Log("MODEL" + ModelCount);
@@ -407,7 +585,7 @@ namespace GoogleARCore.Examples.HelloAR
 
         public void Rotate(Slider sl)
         {
-            Vector3 sc = new Vector3(0, sl.value*360, 0);
+            Vector3 sc = new Vector3(0, sl.value * 360, 0);
             Debug.Log("scA" + sl.value);
             SelectedModel.transform.rotation = Quaternion.Euler(sc);
             Debug.Log("scale" + transform.localScale);

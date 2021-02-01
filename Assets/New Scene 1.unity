@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &761626601
 AudioListener:
   m_ObjectHideFlags: 0
@@ -148,7 +148,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -210,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1459852433
 Light:
   m_ObjectHideFlags: 0
@@ -256,13 +256,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459852432}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1490086788
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +344,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sofa 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2915262214002956585, guid: 066c52bbd8a119b4e93e9a1f684b4aec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2539686202390578067, guid: 066c52bbd8a119b4e93e9a1f684b4aec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -412,6 +417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'Bedroom '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055186150463399404, guid: 81de931d02c4119479bbbc0bd064ace7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6864478778111573846, guid: 81de931d02c4119479bbbc0bd064ace7,
         type: 3}
@@ -482,6 +492,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: single bed 22
       objectReference: {fileID: 0}
+    - target: {fileID: 2763934831058537796, guid: d62dfe6a7f0cc564698480cc8d91ab9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3247280844412459006, guid: d62dfe6a7f0cc564698480cc8d91ab9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -550,6 +565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dining_Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751005103924659336, guid: ec22e3ecca4c52841aded50bb22c58c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1371066200592948786, guid: ec22e3ecca4c52841aded50bb22c58c4,
         type: 3}
@@ -620,6 +640,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: kitchen 01
       objectReference: {fileID: 0}
+    - target: {fileID: 5844697588221047405, guid: 22156ae81e8269d44970a14ea37f9d65,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6509770544727926999, guid: 22156ae81e8269d44970a14ea37f9d65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -688,6 +713,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tools_Bathroom_faucet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622754390455327095, guid: 04965272bb4b6424986d083799127b44,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8998752541574939597, guid: 04965272bb4b6424986d083799127b44,
         type: 3}
@@ -758,6 +788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tools_Bathroom_shawer
       objectReference: {fileID: 0}
+    - target: {fileID: 8200843006707254418, guid: 2ad369223b9cccc4ab1808a207e3299d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8828444980859641384, guid: 2ad369223b9cccc4ab1808a207e3299d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -826,6 +861,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tool_Dresser 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377134687672363885, guid: 0fa9511f155155f4fb34b20864605d55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6038186466062381527, guid: 0fa9511f155155f4fb34b20864605d55,
         type: 3}
@@ -896,6 +936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: single bed 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3354225382335911594, guid: 87255ea34e3e25140b2fb288f36766c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2722226525591784464, guid: 87255ea34e3e25140b2fb288f36766c0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -964,6 +1009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tools_Bathroom_shawer_glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150540985176617394, guid: 8b3b60efa349c9c4c9355fd741c9479d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 341246914413112072, guid: 8b3b60efa349c9c4c9355fd741c9479d,
         type: 3}
@@ -1034,6 +1084,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair 01
       objectReference: {fileID: 0}
+    - target: {fileID: 3541586199803506441, guid: 1dc2595d2e832cf46ba7e0d9c05ca7d0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4210282149917947315, guid: 1dc2595d2e832cf46ba7e0d9c05ca7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1102,6 +1157,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tool_Light 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987135069157592616, guid: 37d424deb0b09db46a4e4f91d479e05d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6367319335867536530, guid: 37d424deb0b09db46a4e4f91d479e05d,
         type: 3}
@@ -1172,6 +1232,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coffe table
       objectReference: {fileID: 0}
+    - target: {fileID: 2422310990097413337, guid: 9896cf7f50cfdc8409c418a5d6358243,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3086680632562527843, guid: 9896cf7f50cfdc8409c418a5d6358243,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1240,6 +1305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: sofa 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974227320885078677, guid: 3cdd878eacc826941b9afb2dc299ee97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6459121416883777583, guid: 3cdd878eacc826941b9afb2dc299ee97,
         type: 3}
@@ -1310,6 +1380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dining table 02
       objectReference: {fileID: 0}
+    - target: {fileID: 3570152031102665394, guid: ff6cd496f8a1cf74f807d1a68bc35774,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4233501262084298760, guid: ff6cd496f8a1cf74f807d1a68bc35774,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1378,6 +1453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: chair 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2290085210334087173, guid: bf600097c67547046b5756825dc4c0d9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1478259234560185023, guid: bf600097c67547046b5756825dc4c0d9,
         type: 3}
@@ -1448,6 +1528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: armchair
       objectReference: {fileID: 0}
+    - target: {fileID: 760364374505411774, guid: 2167da5692617bb4fb6030abbaf433a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 127943511477685764, guid: 2167da5692617bb4fb6030abbaf433a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1516,6 +1601,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tool_Closet 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6649413746446221980, guid: b3b714c09bfd20648994b1efa0f0a936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6272571166695004198, guid: b3b714c09bfd20648994b1efa0f0a936,
         type: 3}
@@ -1586,6 +1676,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tool_double bed 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2381217012703185154, guid: 35b5615bef5bdc940b6f11fdeb22942b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3044460754925917112, guid: 35b5615bef5bdc940b6f11fdeb22942b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1655,6 +1750,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitchen02
       objectReference: {fileID: 0}
+    - target: {fileID: 6328941616706060583, guid: 4fe7780b52ed7a14d80b84facb36aac6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6674117437732150173, guid: 4fe7780b52ed7a14d80b84facb36aac6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1663,12 +1763,12 @@ PrefabInstance:
     - target: {fileID: 6674117437732150173, guid: 4fe7780b52ed7a14d80b84facb36aac6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.94
       objectReference: {fileID: 0}
     - target: {fileID: 6674117437732150173, guid: 4fe7780b52ed7a14d80b84facb36aac6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6674117437732150173, guid: 4fe7780b52ed7a14d80b84facb36aac6,
         type: 3}
@@ -1723,6 +1823,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dining table 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014595404106462949, guid: 07528a8ca78ddd3478bcf9ccf2694e12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5682622846541638751, guid: 07528a8ca78ddd3478bcf9ccf2694e12,
         type: 3}
@@ -1793,6 +1898,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sofa 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5689405271784605669, guid: f9b475c3a0e8ce148a6f8a426f735be8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5025739419840453983, guid: f9b475c3a0e8ce148a6f8a426f735be8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1848,6 +1958,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7179289012702350398, guid: f9b475c3a0e8ce148a6f8a426f735be8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9b475c3a0e8ce148a6f8a426f735be8, type: 3}
 --- !u!1001 &7815113150439370653
@@ -1861,6 +1976,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tools_Bathroom_toilet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569578239716846518, guid: 3045aae318be88a438a7f5d7555b6259,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7081729961650368780, guid: 3045aae318be88a438a7f5d7555b6259,
         type: 3}
@@ -1931,6 +2051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: table
       objectReference: {fileID: 0}
+    - target: {fileID: 8505896055305355475, guid: 2f975bb1805846a4d878c826c92c300e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9025446517559728745, guid: 2f975bb1805846a4d878c826c92c300e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1999,6 +2124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tv table
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558572389104557145, guid: e7ea31115f9329449946b9535b05e16e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3749420154485425891, guid: e7ea31115f9329449946b9535b05e16e,
         type: 3}
@@ -2069,6 +2199,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tool_Wall picture 1  1
       objectReference: {fileID: 0}
+    - target: {fileID: 4356151049316814455, guid: b35e8517affbf6c42a3e65d6a9a76454,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3981174237393654989, guid: b35e8517affbf6c42a3e65d6a9a76454,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2137,6 +2272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tool_capient 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432256661821513331, guid: b99f656f52f262f47b6d7d9fffe04ce6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3947784817009657033, guid: b99f656f52f262f47b6d7d9fffe04ce6,
         type: 3}
